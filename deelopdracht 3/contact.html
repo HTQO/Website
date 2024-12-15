@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Project Systeem en Netwerkbeheer</title>
+    <!-- Link naar de externe CSS -->
+    <link rel="stylesheet" href="/deelopdracht 3/css/reset.css">
+    <link rel="stylesheet" href="/deelopdracht 3/css/fonts.css">
+    <link rel="stylesheet" href="/deelopdracht 3/css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+
+</head>
+<body>
+
+    <nav>
+        <div class="logo">
+            <img src="/deelopdracht 3/assets/logo.png" alt="Logo">
+        </div>
+        <a href="/deelopdracht 3/index.html">Home</a>
+        <a href="/deelopdracht 3/portfolio.html">Portfolio</a>
+        <a href="/deelopdracht 3/project.html">Project</a>
+        <a href="/deelopdracht 3/contact.html">Contact</a>
+    </nav>
+
+<div class="content">
+    <section id="formulier">
+        <h2>Stuur ons een bericht</h2>
+        <p>We horen graag van je! Vul onderstaand formulier in en we nemen zo snel mogelijk contact met je op.</p>
+
+        <form action="verzend_formulier.php" method="post">
+            <label for="naam">Naam:</label>
+            <input type="text" id="naam" name="naam" required placeholder="Je naam">
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required placeholder="Je e-mail">
+
+            <label for="bericht">Bericht:</label>
+            <textarea id="bericht" name="bericht" required placeholder="Je bericht"></textarea>
+
+            <button type="submit">Verstuur</button>
+        </form>
+    </section>
+
+    <section id="locatie">
+        <h2>Onze Locatie</h2>
+        <p>We zijn gevestigd op het volgende adres: Deurne, Antwerpen</p>
+        <p>E-mail: dknihnitskyi@gmail.com</p>
+        <p>Telefoon: +3256436650</p>
+
+        <div id="mapid"></div>
+        <script src="/deelopdracht 3/js/leafleat.js"></script>   
+
+
+    </section>
+</div>
+
+<footer>
+    <p>&copy; 2024 Knihnitskyi Dmytro</p>
+</footer>
+
+</body>
+</html>
